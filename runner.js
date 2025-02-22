@@ -4,7 +4,7 @@ const execute = require("./src/executor.js");
 // Main Compiler Function
 async function action(lines) {
     const main = parse(lines);
-    await centralExecutor(main);
+    await execute(main);
 };
 
 module.exports = async function run(content) {
